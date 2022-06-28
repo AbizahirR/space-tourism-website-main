@@ -1,0 +1,115 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../assets/home/background-home-desktop.jpg);
+	background-size: cover;
+}
+
+.nav__container {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 50px;
+	height: 100px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 30px;
+	margin-top: 30px;
+	font-family: monospace;
+	font-size: 1.5rem;
+}
+.nav__container .nav__links {
+	padding: 0 8rem;
+	background-color: rgba(255, 255, 255, 0.0588235294);
+	-webkit-backdrop-filter: blur(24px);
+	backdrop-filter: blur(24px);
+	display: flex;
+	align-items: center;
+	height: 100%;
+	gap: 50px;
+	position: relative;
+}
+.nav__container .nav__links::after {
+	content: "";
+	position: absolute;
+	width: 830px;
+	height: 2px;
+	background-color: rgba(255, 255, 255, 0.3);
+	left: -800px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.nav__container .nav__links .nav__item {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	position: relative;
+}
+.nav__container .nav__links .nav__item::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: 0;
+	background-color: #fff;
+	transform: scale(0);
+	transition: transform 0.3s;
+}
+.nav__container .nav__links .nav__item:hover::before {
+	transform: scale(1);
+}
+.nav__container .nav__links .nav__item .nav__link {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 100;
+	height: 100%;
+}
+
+.main__container {
+	color: #fff;
+	display: flex;
+	height: calc(100vh - 130px);
+	align-items: flex-end;
+	padding: 100px 300px;
+	justify-content: space-between;
+}
+.main__container .main__title {
+	max-width: 370px;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+		sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	color: #aaa;
+}
+.main__container .main__title .main__title--big {
+	font-size: 7.5rem;
+	color: #fff;
+}
+.main__container .main__title .main__paraph {
+	font-size: small;
+	text-transform: none;
+	line-height: 1.5rem;
+}
+.main__container .main__link {
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	display: grid;
+	min-width: 250px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background-color: #fff;
+	text-decoration: none;
+	color: #000;
+	font-weight: 100;
+	place-items: center;
+	font-size: 2.5rem;
+} /*# sourceMappingURL=main.css.map */
